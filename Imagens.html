@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imagens</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Grupo Facul</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Apresentação</a></li>
-                <li><a href="Imagens.html">Imagens</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+      <h1>Grupo Facul</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Apresentação</a></li>
+          <li><a href="Imagens.html">Imagens</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="galeria">
-            <div class="card"  >
-                <h3>Macaco</h3>
-                <img src="imagens/imagem1.jpg" alt="Imagem 1" width="450px">
-                <p>Anda pelas arvores | Não paga impostos</p>
-            </div>
+      <section class="galeria">
+        <div class="card" id="section1">
+          <h3>Macaco</h3>
+          <img src="imagens/imagem1.jpg" alt="Imagem 1" width="450px" />
+          <p>Anda pelas arvores | Não paga impostos</p>
+        </div>
 
-            <div class="card">
-                <h3>Semaforo</h3>
-                <img src="imagens/imagem2.jpg" alt="Imagem 2" width="450px">
-                <p>Buffado a Noite | Impede acidentes</p>
-            </div>
+        <div class="card" id="section2">
+          <h3>Semaforo</h3>
+          <img src="imagens/imagem2.jpg" alt="Imagem 2" width="450px" />
+          <p>Buffado a Noite | Impede acidentes</p>
+        </div>
 
-            <div class="card">
-                <h3>Esquina</h3>
-                <img src="imagens/imagem3.jpg" alt="Imagem 3" width="450px">
-                <p>Vê 2 Ruas | Altera o campo de visão</p>
-            </div>
+        <div class="card" id="section3">
+          <h3>Esquina</h3>
+          <img src="imagens/imagem3.jpg" alt="Imagem 3" width="450px" />
+          <p>Vê 2 Ruas | Altera o campo de visão</p>
+        </div>
 
-            <div class="card">
-                <h3>Estadio de futebol</h3>
-                <img src="imagens/imagem4.jpg" alt="Imagem 4" width="450px">
-                <p>Muito grande | Gera diversão | Futebol</p>
-            </div>
-        </section>
+        <div class="card" id="section4">
+          <h3>Estadio de futebol</h3>
+          <img src="imagens/imagem4.jpg" alt="Imagem 4" width="450px" />
+          <p>Muito grande | Gera diversão | Futebol</p>
+        </div>
+      </section>
+
+      <button onclick="toggleDarkMode()">Modo Noturno</button>
+
+      <a href="#section1">Macaco</a>
+      <a href="#section2">Sinal</a>
+      <a href="#section3">Esquina</a>
+      <a href="#section4">Estadio</a>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

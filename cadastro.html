@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Grupo Facul</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Apresentação</a></li>
-                <li><a href="Imagens.html">Imagens</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+      <h1>Grupo Facul</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Apresentação</a></li>
+          <li><a href="Imagens.html">Imagens</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Cadastre-se para saber mais sobre o grupo e deixe seu feedback:</h2>
+      <h2>Cadastre-se para saber mais sobre o grupo e deixe seu feedback:</h2>
 
-            <form action="#" method="post" id="cadastroForm">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+      <form onsubmit="return validateForm()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Deixe seu feedback sobre o site:</h2>
-            <textarea id="feedback" name="feedback" rows="4" placeholder="Digite aqui seu feedback..."></textarea>
-            <button onclick="enviarFeedback()">Enviar Feedback</button>
-        </section>
+      <section>
+        <h2>Deixe seu feedback sobre o site:</h2>
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="4"
+          placeholder="Digite aqui seu feedback..."
+        ></textarea>
+        <button onclick="enviarFeedback()">Enviar Feedback</button>
+      </section>
+      <br />
+      <button onclick="toggleDarkMode()">Modo Noturno</button>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
