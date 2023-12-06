@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -40,3 +41,31 @@ footer {
 }
 
 /* Adicione estilos específicos para cada página */
+.integrante{
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: rgb(48, 122, 151);
+    width: 500px;
+    border-radius: 10px;
+}
+
+form {
+    width: 40%;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+}
