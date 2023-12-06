@@ -39,7 +39,7 @@ footer {
   width: 100%;
 }
 
-/* Adicione estilos específicos para cada página */
+
 .integrante {
   padding-left: 10px;
   padding-bottom: 50px;
@@ -68,7 +68,6 @@ form button {
 textarea {
   width: 100%;
 }
-/* Adicione isso ao seu CSS */
 
 body.dark-mode {
   background-color: #333;

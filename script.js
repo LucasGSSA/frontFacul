@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Adicione isso ao seu arquivo JavaScript (script.js)
+
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
